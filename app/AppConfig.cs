@@ -460,6 +460,11 @@ public static class AppConfig
         return ContainsModel("G512LI") || ContainsModel("G513R") || ContainsModel("G713PV") || ContainsModel("G513IE") || ContainsModel("G713RC") || ContainsModel("G513QM") || ContainsModel("G531G");
     }
 
+    public static bool IsLogoRGB()
+    {
+        return ContainsModel("G513R");
+    }
+
     public static bool IsPossible4ZoneRGB()
     {
         return ContainsModel("G614JI_") || ContainsModel("G614JV_") || ContainsModel("G614JZ") || IsStrixLimitedRGB();

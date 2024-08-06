@@ -361,6 +361,16 @@ namespace GHelper
                     checkShutdownBar.Visible = false;
                 }
 
+                if (!AppConfig.IsLogoRGB())
+                {
+                    labelBacklightLogo.Visible = false;
+                    checkAwakeLogo.Visible = false;
+                    checkBatteryLogo.Visible = false;
+                    checkBootLogo.Visible = false;
+                    checkSleepLogo.Visible = false;
+                    checkShutdownLogo.Visible = false;
+                }
+
                 labelBacklightLid.Visible = false;
                 checkAwakeLid.Visible = false;
                 checkBatteryLid.Visible = false;
@@ -368,12 +378,6 @@ namespace GHelper
                 checkSleepLid.Visible = false;
                 checkShutdownLid.Visible = false;
 
-                labelBacklightLogo.Visible = false;
-                checkAwakeLogo.Visible = false;
-                checkBatteryLogo.Visible = false;
-                checkBootLogo.Visible = false;
-                checkSleepLogo.Visible = false;
-                checkShutdownLogo.Visible = false;
             }
 
             if (!AppConfig.IsBacklightZones())
